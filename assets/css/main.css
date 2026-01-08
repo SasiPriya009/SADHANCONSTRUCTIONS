@@ -2622,6 +2622,28 @@ section,
   color: var(--contrast-color);
 }
 
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  color: #fff;
+}
 .tags-widget ul a span {
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
