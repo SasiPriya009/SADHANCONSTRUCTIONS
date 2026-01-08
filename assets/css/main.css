@@ -2626,7 +2626,7 @@ section,
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background-color: #25d366;
+  background-color: var(--accent-color);
   color: #FFF;
   border-radius: 50px;
   text-align: center;
@@ -2641,8 +2641,30 @@ section,
   transition: 0.3s;
 }
 .whatsapp-float:hover {
-  background-color: #128c7e;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
   color: #fff;
+}
+.tags-widget ul a span {
+  padding-left: 5px;
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  font-size: 14px;
+}
+
+/* Get a Quote Button in Nav */
+@media (min-width: 1200px) {
+  .navmenu .btn-get-quote,
+  .navmenu .btn-get-quote:focus {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    padding: 8px 20px;
+    margin-left: 30px;
+    border-radius: 4px;
+  }
+  .navmenu .btn-get-quote:hover,
+  .navmenu .btn-get-quote:focus:hover {
+    color: var(--contrast-color);
+    background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  }
 }
 .tags-widget ul a span {
   padding-left: 5px;
